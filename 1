@@ -1,0 +1,20 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as mp
+import sklearn 
+
+Data = pd.read_csv('/kaggle/input/car-price-prediction/CarPrice_Assignment.csv')
+
+Data.head()
+
+Data.columns
+
+Data.describe(include = 'all')
+
+Data.info()
+
+#Look for Outliers using Box plot or Upper and lower 
+#Look for skewers
+#Look for the need to scale it and normalize it
+#Look for linear relationships between the features and the target
